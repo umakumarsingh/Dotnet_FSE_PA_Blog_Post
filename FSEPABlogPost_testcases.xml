@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-cases>
+   <cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+      <test-case-type>Functional</test-case-type>
+      <expected-ouput>True</expected-ouput>
+      <name>Test_Get_GetAllPost</name>
+      <weight>8</weight>
+      <mandatory>True</mandatory>
+      <desc>Using this test method get list of Post using API</desc>
+   </cases>
+   <cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+      <test-case-type>Functional</test-case-type>
+      <expected-ouput>True</expected-ouput>
+      <name>Test_Post_CreateBlogPost</name>
+      <weight>8</weight>
+      <mandatory>True</mandatory>
+      <desc>Create new Post</desc>
+   </cases>
+   <cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+      <test-case-type>Functional</test-case-type>
+      <expected-ouput>True</expected-ouput>
+      <name>Test_Get_GetOnePostById</name>
+      <weight>5</weight>
+      <mandatory>True</mandatory>
+      <desc>Try to get post by PostId</desc>
+   </cases>
+   <cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+      <test-case-type>Functional</test-case-type>
+      <expected-ouput>True</expected-ouput>
+      <name>Test_Post_CreateBlogPostComment</name>
+      <weight>5</weight>
+      <mandatory>True</mandatory>
+      <desc>Create new Comment on blog post</desc>
+   </cases>
+   <cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+      <test-case-type>Functional</test-case-type>
+      <expected-ouput>True</expected-ouput>
+      <name>Test_Get_GetAllCommentById</name>
+      <weight>5</weight>
+      <mandatory>True</mandatory>
+      <desc>get all comment belongs to post</desc>
+   </cases>
+   <cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+      <test-case-type>Boundary</test-case-type>
+      <expected-ouput>True</expected-ouput>
+      <name>Testfor_ValidatePostId</name>
+      <weight>6</weight>
+      <mandatory>True</mandatory>
+      <desc>Test Valid post id</desc>
+   </cases>
+   <cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+      <test-case-type>Boundary</test-case-type>
+      <expected-ouput>True</expected-ouput>
+      <name>Test_ValidateBlogPost_TitleProperty_Empty</name>
+      <weight>6</weight>
+      <mandatory>True</mandatory>
+      <desc>Validate Post Title is supplied or not</desc>
+   </cases>
+   <cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+      <test-case-type>Boundary</test-case-type>
+      <expected-ouput>True</expected-ouput>
+      <name>Test_ValidateBlogPost_AbstractProperty_Empty</name>
+      <weight>6</weight>
+      <mandatory>True</mandatory>
+      <desc>Validate Post Abstract is supplied or not</desc>
+   </cases>
+   <cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+      <test-case-type>Boundary</test-case-type>
+      <expected-ouput>True</expected-ouput>
+      <name>Test_ValidateBlogPost_DescriptionProperty_Empty</name>
+      <weight>6</weight>
+      <mandatory>True</mandatory>
+      <desc>Validate Post Description is supplied or not</desc>
+   </cases>
+   <cases xmlns:java="http://java.sun.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="java:com.assessment.data.TestCase">
+      <test-case-type>Boundary</test-case-type>
+      <expected-ouput>True</expected-ouput>
+      <name>Test_ValidateComment_CommentMsgProperty_Empty</name>
+      <weight>6</weight>
+      <mandatory>True</mandatory>
+      <desc>Validate Comment CommentMsg is supplied or not</desc>
+   </cases>
+</test-cases>
