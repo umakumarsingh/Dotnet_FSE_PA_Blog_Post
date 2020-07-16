@@ -30,10 +30,22 @@ namespace FSEPABlogPost.BusinessLayers.Services.Repository
         /// <param name="postId"></param>
         /// <param name="comments"></param>
         /// <returns>Comment object if create Comments is ok(200)</returns>
-        public Task<Comment> Comments(string postId, Comment comments)
+        public async Task<Comment> Comments(string postId, Comment comments)
         {
-            //Do code here
-            throw new NotImplementedException();
+            try
+            {
+                if (postId == null && comments == null)
+                {
+                    throw new ArgumentNullException(typeof(Comment).Name + "Object and Id is Null");
+                }
+                _dbCommentsCollection = _mongoContext.GetCollection<Comment>(typeof(Comment).Name);
+                await _dbCommentsCollection.InsertOneAsync(comments);
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
+            return comments;
         }
         /// <summary>
         /// Create new BlogPost in MongoDb
@@ -42,8 +54,20 @@ namespace FSEPABlogPost.BusinessLayers.Services.Repository
         /// <returns> BlogPost object if create method is ok(200)</returns>
         public async Task<BlogPost> Create(BlogPost blogPost)
         {
-            //Do code here
-            throw new NotImplementedException();
+            try
+            {
+                if (blogPost == null)
+                {
+                    throw new ArgumentNullException(typeof(BlogPost).Name + "Object is Null");
+                }
+                _dbCollection = _mongoContext.GetCollection<BlogPost>(typeof(BlogPost).Name);
+                await _dbCollection.InsertOneAsync(blogPost);
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
+            return blogPost;
         }
         /// <summary>
         /// get All comments for specific post
@@ -52,8 +76,17 @@ namespace FSEPABlogPost.BusinessLayers.Services.Repository
         /// <returns></returns>
         public async Task<IEnumerable<Comment>> GetAllComments(string postId)
         {
-            //Do code here
-            throw new NotImplementedException();
+            try
+            {
+                var list = _mongoContext.GetCollection<Comment>("Comment")
+                .Find(c => c.PostId == postId)
+                .SortByDescending(e => e.CommentedDate);
+                return await list.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
         }
         /// <summary>
         /// Get list of all Blogpost
@@ -61,8 +94,17 @@ namespace FSEPABlogPost.BusinessLayers.Services.Repository
         /// <returns>All BlogPost</returns>
         public async Task<IEnumerable<BlogPost>> GetAllPost()
         {
-            //Do code here
-            throw new NotImplementedException();
+            try
+            {
+                var list = _mongoContext.GetCollection<BlogPost>("BlogPost")
+                .Find(Builders<BlogPost>.Filter.Empty, null)
+                .SortByDescending(e => e.PostedDate);
+                return await list.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
         }
         /// <summary>
         /// Get one BlogPost by id
@@ -71,8 +113,18 @@ namespace FSEPABlogPost.BusinessLayers.Services.Repository
         /// <returns> single post</returns>
         public async Task<BlogPost> GetPostById(string postId)
         {
-            //Do code here
-            throw new NotImplementedException();
+            try
+            {
+                var objectId = new ObjectId(postId);
+                FilterDefinition<BlogPost> filter = Builders<BlogPost>.Filter.Eq("PostId", objectId);
+                _dbCollection = _mongoContext.GetCollection<BlogPost>(typeof(BlogPost).Name);
+                return await _dbCollection.FindAsync(filter).Result.FirstOrDefaultAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw (ex);
+            }
         }
     }
 }

@@ -20,14 +20,14 @@ namespace FSEPABlogPost.Controllers
         /// <summary>
         /// creating a referance object of IBlogPostRepository
         /// </summary>
-        private readonly IBlogPostRepository _blogPostRepository;
+        private readonly IBlogPostServices _blogPostServices;
 
         /// <summary>
         /// injecting IBlogPostRepository in consructor to access all methods
         /// </summary>
-        public BlogController(IBlogPostRepository blogPostRepository)
+        public BlogController(IBlogPostServices blogPostServices)
         {
-            _blogPostRepository = blogPostRepository;
+            _blogPostServices = blogPostServices;
         }
 
         //Get All BlogPost on Load of API or calling this method
@@ -35,7 +35,7 @@ namespace FSEPABlogPost.Controllers
         [HttpGet]
         public async Task<IEnumerable<BlogPost>> GetBlogPost()
         {
-            return await _blogPostRepository.GetAllPost();
+            return await _blogPostServices.GetAllPost();
         }
 
         /// <summary>

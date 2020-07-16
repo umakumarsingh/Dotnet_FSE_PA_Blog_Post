@@ -30,7 +30,8 @@ namespace FSEPABlogPost.BusinessLayers.Services
         /// <returns></returns>
         public async Task<Comment> Comments(string postId, Comment comments)
         {
-            return await _blogPostRepository.Comments(postId, comments);
+            //Do Code Here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Add new BlogPost to MongoDb
@@ -39,7 +40,8 @@ namespace FSEPABlogPost.BusinessLayers.Services
         /// <returns></returns>
         public async Task<BlogPost> Create(BlogPost blogPost)
         {
-            return await _blogPostRepository.Create(blogPost);
+            //Do Code Here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get all comments from MongoDb base on blogPost Id
@@ -49,7 +51,8 @@ namespace FSEPABlogPost.BusinessLayers.Services
 
         public async Task<IEnumerable<Comment>> GetAllComments(string postId)
         {
-            return await _blogPostRepository.GetAllComments(postId);
+            //Do code here
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get all BlogPost
@@ -57,7 +60,7 @@ namespace FSEPABlogPost.BusinessLayers.Services
         /// <returns></returns>
         public async Task<IEnumerable<BlogPost>> GetAllPost()
         {
-            return await _blogPostRepository.GetAllPost();
+            throw new NotImplementedException();
         }
         /// <summary>
         /// Get a single BlogPost from MongoDb
@@ -66,7 +69,7 @@ namespace FSEPABlogPost.BusinessLayers.Services
         /// <returns></returns>
         public async Task<BlogPost> GetPostById(string postId)
         {
-            return await _blogPostRepository.GetPostById(postId);
+            throw new NotImplementedException();
         }
     }
 }
