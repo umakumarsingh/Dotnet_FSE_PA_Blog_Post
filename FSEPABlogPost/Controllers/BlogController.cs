@@ -45,6 +45,7 @@ namespace FSEPABlogPost.Controllers
         /// <returns></returns>
         // POST: api/Blog/PostBlogPost
         [HttpPost]
+		[Route("PostBlogPost")]
         public async Task<IActionResult> PostBlogPost([FromBody] BlogPost blogPost)
         {
             //Do code here
@@ -85,6 +86,7 @@ namespace FSEPABlogPost.Controllers
         /// <returns></returns>
         // POST: api/Blog/PostBlogPostComment
         [HttpPost]
+		[Route("PostBlogPostComment")]
         public async Task<IActionResult> PostBlogPostComment([FromRoute] string postId, [FromBody] Comment comment)
         {
             //do code here
