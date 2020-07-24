@@ -14163,11 +14163,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost\\FSEPABlogPost.csproj",
+      "projectUniqueName": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost\\FSEPABlogPost.csproj",
       "projectName": "FSEPABlogPost",
-      "projectPath": "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost\\FSEPABlogPost.csproj",
+      "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost\\FSEPABlogPost.csproj",
       "packagesPath": "C:\\Users\\KUMARUMA\\.nuget\\packages\\",
-      "outputPath": "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost\\obj\\",
+      "outputPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14186,14 +14186,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.BusinessLayers\\FSEPABlogPost.BusinessLayers.csproj": {
-              "projectPath": "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.BusinessLayers\\FSEPABlogPost.BusinessLayers.csproj"
+            "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.BusinessLayers\\FSEPABlogPost.BusinessLayers.csproj": {
+              "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.BusinessLayers\\FSEPABlogPost.BusinessLayers.csproj"
             },
-            "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.DataLayers\\FSEPABlogPost.DataLayers.csproj": {
-              "projectPath": "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.DataLayers\\FSEPABlogPost.DataLayers.csproj"
+            "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.DataLayers\\FSEPABlogPost.DataLayers.csproj": {
+              "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.DataLayers\\FSEPABlogPost.DataLayers.csproj"
             },
-            "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.Entities\\FSEPABlogPost.Entities.csproj": {
-              "projectPath": "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.Entities\\FSEPABlogPost.Entities.csproj"
+            "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.Entities\\FSEPABlogPost.Entities.csproj": {
+              "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.Entities\\FSEPABlogPost.Entities.csproj"
             }
           }
         }

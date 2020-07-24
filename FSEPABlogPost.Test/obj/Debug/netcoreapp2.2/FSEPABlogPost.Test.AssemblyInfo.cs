@@ -12,13 +12,14 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FSEPABlogPost.BusinessLayers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nu" +
-    "ll", "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.Busine" +
-    "ssLayers", "FSEPABlogPost.BusinessLayers.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FSEPABlogPost.DataLayers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.DataLa" +
-    "yers", "FSEPABlogPost.DataLayers.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FSEPABlogPost, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost", "FSEPABlogPost.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FSEPABlogPost.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.Entiti" +
-    "es", "FSEPABlogPost.Entities.csproj", "0")]
+    "ll", "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABl" +
+    "ogPost.BusinessLayers", "FSEPABlogPost.BusinessLayers.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FSEPABlogPost.DataLayers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABl" +
+    "ogPost.DataLayers", "FSEPABlogPost.DataLayers.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FSEPABlogPost, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABl" +
+    "ogPost", "FSEPABlogPost.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("FSEPABlogPost.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABl" +
+    "ogPost.Entities", "FSEPABlogPost.Entities.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FSEPABlogPost.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

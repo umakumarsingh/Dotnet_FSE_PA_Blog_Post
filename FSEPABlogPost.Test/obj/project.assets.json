@@ -15093,11 +15093,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.Test\\FSEPABlogPost.Test.csproj",
+      "projectUniqueName": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.Test\\FSEPABlogPost.Test.csproj",
       "projectName": "FSEPABlogPost.Test",
-      "projectPath": "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.Test\\FSEPABlogPost.Test.csproj",
+      "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.Test\\FSEPABlogPost.Test.csproj",
       "packagesPath": "C:\\Users\\KUMARUMA\\.nuget\\packages\\",
-      "outputPath": "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.Test\\obj\\",
+      "outputPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -15116,8 +15116,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost\\FSEPABlogPost.csproj": {
-              "projectPath": "D:\\IIHT\\Code_Clean_Up\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost\\FSEPABlogPost.csproj"
+            "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost\\FSEPABlogPost.csproj": {
+              "projectPath": "C:\\Users\\KUMARUMA\\Documents\\GitHub\\FSEPABlogPost_Master-master-clean-code\\FSEPABlogPost\\FSEPABlogPost.csproj"
             }
           }
         }
