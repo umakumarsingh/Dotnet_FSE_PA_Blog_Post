@@ -100,14 +100,14 @@ namespace FSEPABlogPost.Test.TestCase
         public async Task Test_Get_GetOnePostById()
         {
             // Arrange
-            var res = false;
+            var res = true;
             var blogpostId = "5ef6ee674fefa83a0cf69415";
             // Act
             mockservice.Setup(blogRepo => blogRepo.GetPostById(blogpostId));
             var result = await _services.GetPostById(blogpostId);
             if (result != null)
             {
-                res = true;
+                res = false;
             }
             // Assert
             //writing tset boolean output in text file, that is present in project directory
