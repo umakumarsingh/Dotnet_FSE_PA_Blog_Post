@@ -1,5 +1,0 @@
-Test_ValidateBlogPost_TitleProperty_Empty=True
-Test_ValidateBlogPost_AbstractProperty_Empty=True
-Test_ValidateComment_CommentMsgProperty_Empty=False
-Test_ValidateBlogPost_DescriptionProperty_Empty=True
-Testfor_ValidatePostId=True

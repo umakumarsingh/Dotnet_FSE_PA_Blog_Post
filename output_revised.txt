@@ -1,2 +1,0 @@
-Test_Post_CreateBlogPostComment=True
-Test_Post_CreateBlogPost=True

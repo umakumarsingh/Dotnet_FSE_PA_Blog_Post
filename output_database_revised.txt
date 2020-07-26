@@ -1,3 +1,0 @@
-MongoDBContext_GetCollection_ValidName_Success=True
-MongoDBContext_Constructor_Success=True
-MongoDBContext_GetCollection_NameEmpty_Failure=True
