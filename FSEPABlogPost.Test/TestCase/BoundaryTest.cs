@@ -260,7 +260,7 @@ namespace FSEPABlogPost.Test.TestCase
             catch (Exception ex)
             {
                 File.AppendAllText("../../../../output_boundary_revised.txt",
-                    "Test_ValidateComment_CommentMsgProperty_Empty\n");
+                    "Test_ValidateComment_CommentMsgProperty_Empty=" + res +"\n");
                 throw (ex);
             }
             return res;

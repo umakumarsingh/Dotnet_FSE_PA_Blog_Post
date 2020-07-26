@@ -1,8 +1,6 @@
 ﻿using FSEPABlogPost.BusinessLayers.Services;
 using FSEPABlogPost.BusinessLayers.Services.Repository;
-using FSEPABlogPost.Controllers;
 using FSEPABlogPost.Entities;
-using Microsoft.AspNetCore.Mvc;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -29,10 +27,10 @@ namespace FSEPABlogPost.Test.TestCase
         /// </summary>
         static ExceptionalTest()
         {
-            if (!File.Exists("../../../../output_exceptional_revised.txt"))
+            if (!File.Exists("../../../../output_exception_revised.txt"))
                 try
                 {
-                    File.Create("../../../../output_exceptional_revised.txt").Dispose();
+                    File.Create("../../../../output_exception_revised.txt").Dispose();
                 }
                 catch (Exception)
                 {
@@ -40,31 +38,33 @@ namespace FSEPABlogPost.Test.TestCase
                 }
             else
             {
-                File.Delete("../../../../output_exceptional_revised.txt");
-                File.Create("../../../../output_exceptional_revised.txt").Dispose();
+                File.Delete("../../../../output_exception_revised.txt");
+                File.Create("../../../../output_exception_revised.txt").Dispose();
             }
         }
-        //[Fact]
-        //public async void Create_NewBlogPost_Null_Failure()
-        //{
-        //    // Arrange
-        //    var res = false;
-        //    var blogPost = new BlogPost()
-        //    {
-        //        Title = "Post-Title",
-        //        Abstract = "Post Abstract-1",
-        //        Description = "Post Description -1"
-        //    };
-        //    blogPost = null;
-        //    // Act
-        //    mockservice.Setup(blogRepo => blogRepo.Create(blogPost));
-        //    var result = await _services.Create(blogPost);
-        //    Assert.Throws<ArgumentNullException>(() => result);
-            
-        //    // Assert
-        //    //writing tset boolean output in text file, that is present in project directory
-        //    File.AppendAllText("../../../../output_exception_revised.txt", "Create_NewBlogPost_Null_Failure=" + res + "\n");
+        [Fact]
+        public async Task CreateNewPost_Null_Failure()
+        {
+            // Arrange
+            // Arrange
+            var res = false;
+            var blogPost = new BlogPost()
+            {
+                Title = "Post-Title",
+                Abstract = "Post Abstract-1",
+                Description = "Post Description -1"
+            };
+            blogPost = null;
+            //Act 
+            mockservice.Setup(blogRepo => blogRepo.Create(blogPost));
+            var result = await _services.Create(blogPost);
+            if (result == null)
+            {
+                res = true;
+            }
+            //writing tset boolean output in text file, that is present in project directory
+            File.AppendAllText("../../../../output_exception_revised.txt", "CreateNewPost_Null_Failure=" + res + "\n");
 
-        //}
+        }
     }
 }
