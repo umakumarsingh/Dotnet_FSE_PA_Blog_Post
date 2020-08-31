@@ -60,6 +60,7 @@ namespace FSEPABlogPost.BusinessLayers.Services
         /// <returns></returns>
         public async Task<IEnumerable<BlogPost>> GetAllPost()
         {
+            //Do Code Here
             throw new NotImplementedException();
         }
         /// <summary>
@@ -69,6 +70,7 @@ namespace FSEPABlogPost.BusinessLayers.Services
         /// <returns></returns>
         public async Task<BlogPost> GetPostById(string postId)
         {
+            //Do Code Here
             throw new NotImplementedException();
         }
     }
